@@ -1,0 +1,48 @@
+package org.Sujan;
+
+import java.util.*;
+
+class Data<T>{
+	private T myVariable;
+
+	public Data(T myVariable) {
+		this.myVariable = myVariable;
+	}
+
+	public T getMyVariable() {
+		return myVariable;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [myVariable=" + myVariable + "]";
+	}
+		
+}
+
+
+
+public class App {
+
+	public static void main(String[] args) {
+
+		List<Data> elements = new LinkedList<>();
+		elements.add(new Data("Some text"));
+		elements.add(new Data(1));
+		elements.add(new Data(1.0));
+		elements.add(new Data('%'));
+		elements.add(new Data(5.0f));
+
+		App app = new App();
+		app.printList(elements);
+
+	}
+
+	void printList(List<Object> list) {
+		ListIterator<Object> iterator = list.listIterator();
+		while (iterator.hasNext()) {
+			System.out.println("Element: " + iterator.next());
+		}
+	}
+
+}

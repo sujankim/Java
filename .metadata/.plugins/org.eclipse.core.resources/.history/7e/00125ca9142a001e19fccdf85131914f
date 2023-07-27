@@ -1,0 +1,38 @@
+package org.Sujan;
+
+import java.util.*;
+
+class Names implements Comparable<Names>{
+	private String name;
+
+	public Names(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public int compareTo(Names o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		
+		String x = "a";
+		String y = "b";
+		x.compareTo(y);
+		
+	}
+
+	void printList(List<String> list) {
+		ListIterator<String> iterator = list.listIterator();
+		while (iterator.hasNext()) {
+			System.out.println("Element: " + iterator.next());
+		}
+	}
+
+}

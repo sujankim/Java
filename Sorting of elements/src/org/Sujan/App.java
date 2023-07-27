@@ -1,0 +1,32 @@
+package org.Sujan;
+
+import java.util.*;
+
+public class App {
+
+	public static void main(String[] args) {
+		List<String> countries = new LinkedList<>();
+		countries.add("Nepal");
+		countries.add("China");
+		countries.add("USA");
+		countries.add("India");
+		countries.add("UK");
+
+		App app = new App();
+		app.printList(countries);
+		System.out.println("************");
+		countries.sort(null);
+		app.printList(countries);
+		System.out.println("************");
+		Collections.reverse(countries);
+		app.printList(countries);
+	}
+
+	void printList(List<String> list) {
+		ListIterator<String> iterator = list.listIterator();
+		while (iterator.hasNext()) {
+			System.out.println("Element: " + iterator.next());
+		}
+	}
+
+}

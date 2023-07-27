@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main {
+	
+	
+	static ArrayList<String> listNames = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		listNames.add("Sujan");
+		listNames.add("Lamichhane");
+		System.out.println(listNames);
+		
+
+	}
+
+}

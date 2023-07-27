@@ -1,0 +1,52 @@
+package org.Sujan;
+
+import java.util.*;
+
+class Names implements Comparable<Names> {
+	private String name;
+
+	public Names(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public int compareTo(Names obj) {
+		if (name.length() == obj.name.length()) {
+			return 0;
+		} else if (name.length() < obj.name.length()) {
+			return -1;
+		} else {
+			return 1;
+		}
+
+	}
+
+	@Override
+	public String toString() {
+		return name;
+	}
+
+}
+
+public class App {
+
+	public static void main(String[] args) {
+
+		List names = new LinkedList<>();
+		names.add(new Names("Sujan"));
+		names.add(new Names("Sushil"));
+		names.add(new Names("Sandip"));
+
+		App app = new App();
+		app.printList(names);
+
+	}
+
+	void printList(List<Names> list) {
+		ListIterator<Names> iterator = list.listIterator();
+		while (iterator.hasNext()) {
+			System.out.println("Element: " + iterator.next());
+		}
+	}
+
+}

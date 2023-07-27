@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;names&apos; in &apos;org.Sujan.App.main(...)&apos; to &apos;elements&apos;&#x0D;&#x0A;- Original project: &apos;Comparable Interface&apos;&#x0D;&#x0A;- Original element: &apos;org.Sujan.App.main(String[]).names&apos;&#x0D;&#x0A;- Renamed element: &apos;names&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;names&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;org.Sujan{App.java[App~main~\[QString;@names!520!559!533!537!QList\&lt;QObject;&gt;;!0!false" name="elements" references="true" stamp="1690198574745" version="1.0"/>
+</session>

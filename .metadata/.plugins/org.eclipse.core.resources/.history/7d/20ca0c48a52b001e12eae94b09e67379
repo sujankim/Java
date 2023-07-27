@@ -1,0 +1,17 @@
+package org.Sujan;
+
+// ()-> this symbol is called as arrow token
+
+interface Lamda {
+	abstract public void demo();
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		int x =10;
+		Lamda lamda = ()-> System.out.println("The value of x is :"+x);
+		lamda.demo();
+	}
+
+}

@@ -1,0 +1,27 @@
+package org.Sujan;
+
+import java.util.LinkedList;
+
+public class App {
+
+	public static void main(String[] args) {
+		LinkedList<String> countries = new LinkedList<>();
+		countries.add("Nepal");
+		countries.add("China");
+		countries.add("USA");
+		countries.add("India");
+		countries.add("UK");
+		
+		new App().printList(countries);
+		countries.add(1, "Canada");
+		new App().printList(countries);
+	}
+	
+	void printList(LinkedList<String> list) {
+		for(String element: list) {
+			System.out.println("Elements: " +element);
+		}
+		System.out.println("***************");
+	}
+
+}

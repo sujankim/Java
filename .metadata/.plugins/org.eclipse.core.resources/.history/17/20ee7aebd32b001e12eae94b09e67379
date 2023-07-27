@@ -1,0 +1,13 @@
+package org.Sujan;
+
+public class WriteObject {
+
+	public static void main(String[] args) {
+		Vehicle bike = new Vehicle("bike", 9765);
+		Vehicle car = new Vehicle("car", 9646);
+		
+		
+		System.out.println(bike);
+	}
+
+}
